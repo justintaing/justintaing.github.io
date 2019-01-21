@@ -7,26 +7,44 @@ class Circle extends Component {
         super(props);
         this.state = {
             hover: false,
-            x: 0
+            mouseDown: false,
+            x: 0,
+            initialLoad: true
         };
 
         this.circleDiv = React.createRef();
         this.labelDiv = React.createRef();
     }
 
-    componentDidMount() {
+    updateLabelPosition = () => {
         let rect = ReactDOM.findDOMNode(this.circleDiv.current).getBoundingClientRect();
+        let rectWidth = this.circleDiv.current.clientWidth / 2;
         let labelWidth = this.labelDiv.current.clientWidth;
 
         this.setState({
-            x: (rect.x) - (labelWidth/2) + 25
+            x: (rect.x) - (labelWidth/2) + rectWidth
         });
+    }
+
+    componentDidMount() {
+        this.updateLabelPosition();
+        window.addEventListener("resize", this.updateLabelPosition);
+
+        setTimeout(
+            function() {
+                this.setState({
+                    initialLoad: false
+                })
+            }.bind(this),
+            2000
+        );
     }
 
     onMouseEnterHandler = () => {
         this.setState({
             hover: true
         });
+        this.updateLabelPosition();
     }
 
     onMouseLeaveHandler = () => {
@@ -35,13 +53,35 @@ class Circle extends Component {
         });
     }
 
+    onMouseDownHandler = () => {
+        this.setState({
+            mouseDown: true
+        });
+        console.log('clicked');
+    }
+
+    onMouseUpHandler = () => {
+        this.setState({
+            mouseDown: false
+        });
+        console.log('unlicked');
+    }
+
+    handleClick = () => {
+        this.props.navigate(this.props.label);
+    }
+
     render = () => {
         return (
             <div className="container">
-                <div className="circle"
+                <div className={"circle " + 
+                    ((this.state.initialLoad || this.state.mouseDown) && this.props.initialColor)}
                     ref={this.circleDiv}
                     onMouseEnter={this.onMouseEnterHandler}
-                    onMouseLeave={this.onMouseLeaveHandler}>
+                    onMouseLeave={this.onMouseLeaveHandler}
+                    onClick={this.handleClick}
+                    onMouseDown={this.onMouseDownHandler}
+                    onMouseUp={this.onMouseUpHandler}>
                 </div>
                 <div className="label"
                     ref={this.labelDiv}

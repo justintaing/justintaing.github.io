@@ -3,14 +3,16 @@ import Circle from '../components/Circle';
 import '../styles/Navigator.css';
 
 class Navigator extends Component {
+    navigate = (label) => {
+        console.log(label);
+    }
+
     render = () => {
         return (
             <div className="container">
-                <div className="circles">
-                    <Circle label="About" />
-                    <Circle label="Experience" />
-                    <Circle label="Contact" />
-                </div>
+                <Circle label="About" initialColor="red" navigate={this.navigate}/>
+                <Circle label="Experience" initialColor="green" navigate={this.navigate}/>
+                <Circle label="Contact" initialColor="blue" navigate={this.navigate}/>
             </div>
         );
     }
