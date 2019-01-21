@@ -1,18 +1,28 @@
 import React, { Component } from 'react';
+
 import Circle from '../components/Circle';
 import '../styles/Navigator.css';
 
 class Navigator extends Component {
-    navigate = (label) => {
-        console.log(label);
+    constructor(props) {
+        super(props);
+        this._mounted = false;
+    }
+
+    componentDidMount() {
+        this._mounted = true;
+    }
+
+    componentWillUnmount() {
+        this._mounted = false;
     }
 
     render = () => {
         return (
             <div className="container">
-                <Circle label="About" initialColor="red" navigate={this.navigate}/>
-                <Circle label="Experience" initialColor="green" navigate={this.navigate}/>
-                <Circle label="Contact" initialColor="blue" navigate={this.navigate}/>
+                <Circle label="About" initialColor="red" />
+                <Circle label="Resume" initialColor="green" />
+                <Circle label="Contact" initialColor="blue" />
             </div>
         );
     }

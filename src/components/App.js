@@ -1,17 +1,25 @@
 import React, { Component } from 'react';
-import Navigator from '../components/Navigator';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+
+import Home from '../components/Home';
+import About from '../components/About';
+import Resume from '../components/Resume';
+import Contact from '../components/Contact';
 
 import '../styles/App.css';
 
 class App extends Component {
+
   render() {
     return (
-      <div className="App">
-        <h1>
-          Justin Taing
-        </h1>
-        <Navigator/>
-      </div>
+      <Router>
+        <div className="App">
+          <Route exact path="/" component={Home}/>
+          <Route path="/about" component={About}/>
+          <Route path="/resume" component={Resume}/>
+          <Route path="/contact" component={Contact}/>
+        </div>
+      </Router>
     );
   }
 }

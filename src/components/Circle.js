@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import { NavLink } from 'react-router-dom';
+
 import '../styles/Circle.css';
 
 class Circle extends Component {
@@ -14,67 +16,84 @@ class Circle extends Component {
 
         this.circleDiv = React.createRef();
         this.labelDiv = React.createRef();
-    }
-
-    updateLabelPosition = () => {
-        let rect = ReactDOM.findDOMNode(this.circleDiv.current).getBoundingClientRect();
-        let rectWidth = this.circleDiv.current.clientWidth / 2;
-        let labelWidth = this.labelDiv.current.clientWidth;
-
-        this.setState({
-            x: (rect.x) - (labelWidth/2) + rectWidth
-        });
+        this._mounted = false;
     }
 
     componentDidMount() {
         this.updateLabelPosition();
         window.addEventListener("resize", this.updateLabelPosition);
 
+        this._mounted = true;
+
         setTimeout(
             function() {
-                this.setState({
-                    initialLoad: false
-                })
+                if (this._mounted) {
+                    this.setState({
+                        initialLoad: false
+                    })
+                }
             }.bind(this),
             2000
         );
     }
 
+    componentWillUnmount() {
+        this._mounted = false;
+    }
+
+    updateLabelPosition = () => {
+        if (this._mounted) {
+            let rect = ReactDOM.findDOMNode(this.circleDiv.current).getBoundingClientRect();
+            let rectWidth = this.circleDiv.current.clientWidth / 2;
+            let labelWidth = this.labelDiv.current.clientWidth;
+
+            this.setState({
+                x: (rect.x) - (labelWidth/2) + rectWidth
+            });
+        }
+    }
+
     onMouseEnterHandler = () => {
-        this.setState({
-            hover: true
-        });
-        this.updateLabelPosition();
+        if (this._mounted) {
+            this.setState({
+                hover: true
+            });
+            this.updateLabelPosition();
+        }
     }
 
     onMouseLeaveHandler = () => {
-        this.setState({
-            hover: false
-        });
+        if (this._mounted) {
+            this.setState({
+                hover: false
+            });
+        }
     }
 
     onMouseDownHandler = () => {
-        this.setState({
-            mouseDown: true
-        });
-        console.log('clicked');
+        if (this._mounted) {
+            this.setState({
+                mouseDown: true
+            });
+        }
     }
 
     onMouseUpHandler = () => {
-        this.setState({
-            mouseDown: false
-        });
-        console.log('unlicked');
+        if (this._mounted) {
+            this.setState({
+                mouseDown: false
+            });
+        }
     }
 
-    handleClick = () => {
-        this.props.navigate(this.props.label);
-    }
+    // handleClick = () => {
+    //     this.props.navigate(this.props.label);
+    // }
 
     render = () => {
         return (
             <div className="container">
-                <div className={"circle " + 
+                <NavLink to={'/'+this.props.label} className={"circle " + 
                     ((this.state.initialLoad || this.state.mouseDown) && this.props.initialColor)}
                     ref={this.circleDiv}
                     onMouseEnter={this.onMouseEnterHandler}
@@ -82,7 +101,7 @@ class Circle extends Component {
                     onClick={this.handleClick}
                     onMouseDown={this.onMouseDownHandler}
                     onMouseUp={this.onMouseUpHandler}>
-                </div>
+                </NavLink>
                 <div className="label"
                     ref={this.labelDiv}
                     style={{
