@@ -10,8 +10,7 @@ class App extends Component {
         <h1>
           Justin Taing
         </h1>
-        <Navigator>
-        </Navigator>
+        <Navigator/>
       </div>
     );
   }
