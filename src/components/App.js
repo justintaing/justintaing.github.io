@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
-import logo from '../svg/logo.svg';
+import Navigator from '../components/Navigator';
+
 import '../styles/App.css';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            work in progress
-          </p>
-        </header>
+        <h1>
+          Justin Taing
+        </h1>
+        <Navigator>
+        </Navigator>
       </div>
     );
   }
