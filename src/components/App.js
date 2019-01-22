@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 
-import Home from '../components/Home';
-import About from '../components/About';
+import Home from './Home';
+import About from './About';
 import Experience from './Experience';
-import Contact from '../components/Contact';
+import Contact from './Contact';
 
 import '../styles/App.css';
 
