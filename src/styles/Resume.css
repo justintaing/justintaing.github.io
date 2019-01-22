@@ -1,8 +1,8 @@
-.contact {
+.resume {
     min-height: 100vh;
 }
 
-.contact .content {
+.resume .content {
     min-height: 100vh;
     text-align: center;
     display: flex;

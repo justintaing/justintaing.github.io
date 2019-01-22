@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
 
-import Navigator from '../components/Navigator';
+import Header from '../components/Header';
 
 class Contact extends Component {
-    render = () => {
+    render() {
         return (
-            <div>        
-                <h1>Justin Taing</h1>
-                <Navigator/>
+            <div className="resume">
+                <Header/>
+                <div className="content">
+                    <div className="title">Contact</div>
+                    <div className="body"></div>
+                </div>
             </div>
         );
     }

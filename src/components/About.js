@@ -1,18 +1,25 @@
 import React, { Component } from 'react';
 
+import Header from './Header';
 import Navigator from '../components/Navigator';
 
-// import '../styles/About.css';
+import '../styles/About.css';
+import { bio } from '../text/about.json';
 
 class About extends Component {
-  render() {
-    return (
-        <div>        
-            <h1>Justin Taing</h1>
-            <Navigator/>
-        </div>
-    );
-  }
+    render() {
+        return (
+            <div className="about">
+                <Header/>
+                <div className="content">
+                    <div className="title">About</div>
+                    <div className="body">
+                        {bio}
+                    </div>
+                </div>
+            </div>
+        );
+    }
 }
 
 export default About;

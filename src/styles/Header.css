@@ -1,0 +1,26 @@
+.header {
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #282c34cc;
+}
+
+.header .name {
+    font-size: 2.5rem;
+    width: 30vw;
+}
+
+.header .nav {
+    width: 40vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header .spacer {
+    width: 30vw;
+}

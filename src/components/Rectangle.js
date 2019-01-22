@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { NavLink } from 'react-router-dom';
 
-import '../styles/Circle.css';
+import '../styles/Rectangle.css';
 
-class Circle extends Component {
+class Rectangle extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -33,7 +33,7 @@ class Circle extends Component {
                     })
                 }
             }.bind(this),
-            2000
+            1250
         );
     }
 
@@ -93,14 +93,16 @@ class Circle extends Component {
     render = () => {
         return (
             <div className="container">
-                <NavLink to={'/'+this.props.label} className={"circle " + 
-                    ((this.state.initialLoad || this.state.mouseDown) && this.props.initialColor)}
-                    ref={this.circleDiv}
-                    onMouseEnter={this.onMouseEnterHandler}
-                    onMouseLeave={this.onMouseLeaveHandler}
-                    onClick={this.handleClick}
-                    onMouseDown={this.onMouseDownHandler}
-                    onMouseUp={this.onMouseUpHandler}>
+                <NavLink to={'/'+this.props.label.toLowerCase()} activeClassName={this.props.initialColor + '-active'}>
+                    <div className={'circle ' + 
+                        ((this.state.initialLoad || this.state.mouseDown) ? this.props.initialColor : 'activeClassName')}
+                        ref={this.circleDiv}
+                        onMouseEnter={this.onMouseEnterHandler}
+                        onMouseLeave={this.onMouseLeaveHandler}
+                        onClick={this.handleClick}
+                        onMouseDown={this.onMouseDownHandler}
+                        onMouseUp={this.onMouseUpHandler}>
+                    </div>
                 </NavLink>
                 <div className="label"
                     ref={this.labelDiv}
@@ -116,4 +118,4 @@ class Circle extends Component {
     }
 }
 
-export default Circle;
+export default Rectangle;
