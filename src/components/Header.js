@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import Navigator from '../components/Navigator';
+import Navigator from './Navigator';
 
 import { name } from '../text/settings.json';
 import '../styles/Header.css';
