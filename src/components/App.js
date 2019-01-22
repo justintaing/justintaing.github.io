@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from "react-transition-group";
-
 
 import Home from '../components/Home';
 import About from '../components/About';
@@ -14,12 +13,12 @@ class App extends Component {
 
     render() {
         return (
-            <Router>
+            <Router basename={process.env.PUBLIC_URL}>
             <Route render={({ location }) => (
                 <div className="App">
                     <TransitionGroup className="transition-group">
                         <CSSTransition
-                        key={location.key}
+                        key={location.pathname}
                         timeout={300}
                         classNames='fade'>
                             <section className="route-section">
