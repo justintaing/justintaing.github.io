@@ -10,7 +10,7 @@
 
 .header .name {
     font-size: 2.5rem;
-    width: 30vw;
+    width: calc(30vw - 1rem);
 }
 
 .header .nav {
@@ -22,5 +22,5 @@
 }
 
 .header .spacer {
-    width: 30vw;
+    width: calc(30vw - 1rem);
 }
