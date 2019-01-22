@@ -7,6 +7,17 @@ body {
   font-size: 3.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
+  text-align: center;
+}
+
+.subtitle {
+  font-weight: 300;
+  font-size: 2rem;
+  margin-bottom: .5rem;
+}
+
+.body {
+  font-size: 1.25rem;
 }
 
 .App {
@@ -32,7 +43,7 @@ section.route-section {
 
 .fade-enter.fade-enter-active {
   opacity: 1;
-  transition: opacity 250ms ease;
+  transition: opacity 200ms ease;
 }
 
 .fade-exit {
@@ -41,5 +52,5 @@ section.route-section {
 
 .fade-exit.fade-exit-active {
   opacity: 0.01;
-  transition: opacity 750ms ease;
+  transition: opacity 800ms ease;
 }

@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 
-import Header from '../components/Header';
+import Header from './Header';
 
-import '../styles/Resume.css';
+import '../styles/Experience.css';
 
-class Resume extends Component {
+class Experience extends Component {
     render() {
         return (
-            <div className="resume">
+            <div className="experience">
                 <Header/>
                 <div className="content">
-                    <div className="title">Resume</div>
+                    <div className="title">Experience</div>
                     <div className="body"></div>
                 </div>
             </div>
@@ -18,4 +18,4 @@ class Resume extends Component {
     }
 }
 
-export default Resume;
+export default Experience;

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 import Header from './Header';
-import Navigator from '../components/Navigator';
 
 import '../styles/About.css';
 import { bio } from '../text/about.json';

@@ -8,7 +8,7 @@ class Navigator extends Component {
         return (
             <div className="container">
                 <Rectangle label="About" initialColor="red" />
-                <Rectangle label="Resume" initialColor="green" />
+                <Rectangle label="Experience" initialColor="green" />
                 <Rectangle label="Contact" initialColor="blue" />
             </div>
         );
