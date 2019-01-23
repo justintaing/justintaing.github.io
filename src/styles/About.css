@@ -10,6 +10,13 @@
     justify-content: center;
 }
 
-.about .content .body {
-    max-width: 75vw;
+.about .content .bio {
+    max-width: 65vw;
+    margin-bottom: 2rem;
+}
+
+.about .content .bio .list {
+    text-align: center;
+    list-style-type: none;
+    padding-left: 0;
 }

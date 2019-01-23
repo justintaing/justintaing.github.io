@@ -24,7 +24,7 @@ class Experience extends Component {
     render() {
         return (
             <div className="experience">
-                <Header/>
+                {/* <Header/> */}
                 <div className="content">
                     <div className="title">Experience</div>
                     <div className="body"></div>

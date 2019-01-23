@@ -8,7 +8,7 @@ class Contact extends Component {
     render() {
         return (
             <div className="contact">
-                <Header/>
+                {/* <Header/> */}
                 <div className="content">
                     <div className="title">Contact</div>
                     <div className="body">

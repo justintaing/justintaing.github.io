@@ -8,31 +8,34 @@ import Experience from './Experience';
 import Contact from './Contact';
 
 import '../styles/App.css';
+import Header from './Header';
 
 class App extends Component {
 
     render() {
         return (
             <Router basename={process.env.PUBLIC_URL}>
-            <Route render={({ location }) => (
-                <div className="App">
-                    <TransitionGroup className="transition-group">
-                        <CSSTransition
-                        key={location.pathname}
-                        timeout={300}
-                        classNames='fade'>
-                            <section className="route-section">
-                                <Switch location={location}>
-                                    <Route exact path="/" component={Home}/>
-                                    <Route exact path="/about" component={About}/>
-                                    <Route exact path="/experience" component={Experience}/>
-                                    <Route exact path="/contact" component={Contact}/>
-                                </Switch>
-                            </section>
-                        </CSSTransition>
-                    </TransitionGroup>
-                </div>
-            )}/>
+            <div className="App">
+                <Header/>
+                    <Route render={({ location }) => (
+                        <TransitionGroup className="transition-group">
+                            <CSSTransition
+                            key={location.pathname}
+                            timeout={300}
+                            classNames="fade">
+                                <section className="route-section">
+                                    <Switch location={location}>
+
+                                        <Route exact path="/" component={Home}/>
+                                        <Route exact path="/about" component={About}/>
+                                        <Route exact path="/experience" component={Experience}/>
+                                        <Route exact path="/contact" component={Contact}/>
+                                    </Switch>
+                                </section>
+                            </CSSTransition>
+                        </TransitionGroup>
+                    )}/>
+            </div>
             </Router>
         );
     }

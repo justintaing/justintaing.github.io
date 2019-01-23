@@ -58,3 +58,19 @@ section.route-section {
   opacity: 0.01;
   transition: opacity 800ms ease;
 }
+
+.shrink-enter {
+  
+}
+
+.shrink-enter.shrink-enter-active {
+
+}
+
+.shrink-exit {
+  margin-top: 0vh;
+}
+.shrink-exit.shrink-exit-active {
+  margin-top: -100vh;
+  transition: all 500ms ease;
+}

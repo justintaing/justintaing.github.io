@@ -6,6 +6,7 @@
     justify-content: space-between;
     align-items: center;
     background: #282c34cc;
+    z-index: 100;
 }
 
 .header .name {
