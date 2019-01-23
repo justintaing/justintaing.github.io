@@ -17,6 +17,7 @@ class Rectangle extends Component {
         this.circleDiv = React.createRef();
         this.labelDiv = React.createRef();
         this._mounted = false;
+        this._delay = this.props.delay;
     }
 
     componentDidMount() {
@@ -33,7 +34,7 @@ class Rectangle extends Component {
                     })
                 }
             }.bind(this),
-            1250
+            this._delay
         );
     }
 

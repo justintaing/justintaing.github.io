@@ -14,3 +14,10 @@
     font-size: 1.5rem;
     max-width: 50vw;
 }
+
+.experience .card-back {
+    border: .1rem solid #eee;
+    max-width: 60vw;
+    padding: .5rem;
+    text-align: start;
+}

@@ -7,9 +7,9 @@ class Navigator extends Component {
     render = () => {
         return (
             <div className="container">
-                <Rectangle label="About" initialColor="red" />
-                <Rectangle label="Experience" initialColor="green" />
-                <Rectangle label="Contact" initialColor="blue" />
+                <Rectangle label="About" delay={this.props.delay} initialColor="red" />
+                <Rectangle label="Experience" delay={this.props.delay} initialColor="green" />
+                <Rectangle label="Contact" delay={this.props.delay} initialColor="blue" />
             </div>
         );
     }

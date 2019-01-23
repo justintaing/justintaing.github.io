@@ -14,7 +14,7 @@ class Header extends Component {
                     <NavLink className="NavLink-name" to="/">{name}</NavLink>
                 </div>
                 <div className="nav">
-                    <Navigator/>
+                    <Navigator delay={4000}/>
                 </div>
                 <div className="spacer"></div>
             </div>

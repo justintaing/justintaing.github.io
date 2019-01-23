@@ -5,18 +5,13 @@ import '../styles/Experience.css';
 class ExperienceCard extends Component {
     render() {
         return (
-            <div></div>
+            <div className="card-back">
+                Experience Card
+            </div>
         );
     }
 }
 
-class EducationCard extends Component {
-    render() {
-        return (
-            <div></div>
-        );
-    }
-}
 
 class Experience extends Component {
     render() {
@@ -24,7 +19,9 @@ class Experience extends Component {
             <div className="experience">
                 <div className="content">
                     <div className="title">Experience</div>
-                    <div className="body"></div>
+                    <div className="body">
+                        <ExperienceCard/>
+                    </div>
                 </div>
             </div>
         );
