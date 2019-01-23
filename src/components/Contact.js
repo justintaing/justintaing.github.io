@@ -12,9 +12,7 @@ class Contact extends Component {
                 <div className="content">
                     <div className="title">Contact</div>
                     <div className="body">
-                        <a className="link" href="mailto:taingjustin@icloud.com" rel="noopener noreferrer">
-                            <i class="fas fa-envelope-square"></i>
-                        </a>
+                        <p>My email address is my last name followed by my first name at icloud dot com.</p>
                         <a className="link" href="https://www.linkedin.com/in/justintaing/" target="_blank" rel="noopener noreferrer">
                             <i class="fab fa-linkedin"></i>
                         </a>
