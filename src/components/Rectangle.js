@@ -21,7 +21,7 @@ class Rectangle extends Component {
 
     componentDidMount() {
         this.updateLabelPosition();
-        window.addEventListener("resize", this.updateLabelPosition);
+        window.addEventListener('resize', this.updateLabelPosition);
 
         this._mounted = true;
 
@@ -39,6 +39,7 @@ class Rectangle extends Component {
 
     componentWillUnmount() {
         this._mounted = false;
+        window.removeEventListener('resize', this.updateLabelPosition);
     }
 
     updateLabelPosition = () => {
@@ -70,38 +71,16 @@ class Rectangle extends Component {
         }
     }
 
-    onMouseDownHandler = () => {
-        if (this._mounted) {
-            this.setState({
-                mouseDown: true
-            });
-        }
-    }
-
-    onMouseUpHandler = () => {
-        if (this._mounted) {
-            this.setState({
-                mouseDown: false
-            });
-        }
-    }
-
-    // handleClick = () => {
-    //     this.props.navigate(this.props.label);
-    // }
-
     render = () => {
         return (
             <div className="container">
                 <NavLink to={'/'+this.props.label.toLowerCase()} activeClassName={this.props.initialColor + '-active'}>
-                    <div className={'circle ' + 
-                        ((this.state.initialLoad || this.state.mouseDown) ? this.props.initialColor : 'activeClassName')}
+                    <div className={'rectangle ' + 
+                        ((this.state.initialLoad || this.state.mouseDown) ? this.props.initialColor : 'NavLinkActive')}
                         ref={this.circleDiv}
                         onMouseEnter={this.onMouseEnterHandler}
                         onMouseLeave={this.onMouseLeaveHandler}
-                        onClick={this.handleClick}
-                        onMouseDown={this.onMouseDownHandler}
-                        onMouseUp={this.onMouseUpHandler}>
+                        onClick={this.handleClick}>
                     </div>
                 </NavLink>
                 <div className="label"

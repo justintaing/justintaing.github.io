@@ -1,27 +1,30 @@
-.circle {
+.rectangle {
 	/* border-radius: 50%; */
 	width: 4rem;
     height: 1.25rem;
     background: #282c34;
     border: .1rem solid #999;
-    transition: .75s ease;
-    margin-bottom: .25rem;
+    transition: all .75s ease;
+    margin-bottom: .30rem;
+    text-decoration: none;
+
 }
 
-.circle:hover {
+.rectangle:hover {
     cursor: pointer;
     border: .1rem solid #fff;
+    width: 5rem;
     /* background: white; */
-    transition: 0.25s ease;
+    transition: all 0.25s ease;
 }
 
-.circle:active {
+.rectangle:active {
     border: .1rem solid #444;
+    width: 3.5rem;
 }
 
 .container {
-    padding-left: .25rem;
-    padding-right: .25rem;
+    padding: 0rem .25rem;
     display: inline-flex;
 }
 
@@ -31,38 +34,38 @@
 }
 
 .visible {
-    transition: 0.25s all ease;
+    transition: all 0.25s ease;
     opacity: 1;
 }
 
 .invisible {
-    transition: 0.25s all ease;
+    transition: all 0.25s ease;
     opacity: 0;
 }
 
-.red-active .activeClassName {
+.red-active .NavLinkActive {
     background: #EE220C;
 }
 
-.green-active .activeClassName {
+.green-active .NavLinkActive {
     background: #61D836;
 }
 
-.blue-active .activeClassName {
+.blue-active .NavLinkActive {
     background: #00A2FF;
 }
 
 .red {
     background: #EE220C;
-    transition: .5s ease;
+    transition: all .5s ease;
 }
 
 .green {
     background: #61D836;
-    transition: .5s ease;
+    transition: all .5s ease;
 }
 
 .blue {
     background: #00A2FF;
-    transition: .5s ease;
+    transition: all .5s ease;
 }

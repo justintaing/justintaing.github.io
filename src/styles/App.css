@@ -3,6 +3,10 @@ body {
   background-color: #282c34;
 }
 
+a:active {
+  color: #999;
+}
+
 .title {
   font-size: 3.5rem;
   font-weight: bold;
