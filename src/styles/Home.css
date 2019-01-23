@@ -1,5 +1,4 @@
 .home {
-    text-align: center;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -28,4 +27,22 @@
 
 .lightblue {
     color: #53d9eb
+}
+
+.Typist .Cursor {
+    display: inline-block;
+}
+
+.Typist .Cursor--blinking {
+    opacity: 1;
+    animation: blink 1s step-end infinite; 
+}
+
+@keyframes blink {
+  from, to {
+      color: white;
+  }
+  50% {
+    color: transparent;
+  }
 }
