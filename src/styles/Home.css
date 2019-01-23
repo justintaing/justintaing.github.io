@@ -1,4 +1,13 @@
-.home .name {
+.home {
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home .title {
     font-size: 4rem;
     font-family: 'Inconsolata', monospace;
     white-space: pre-line;
@@ -9,11 +18,14 @@
     margin-bottom: 1rem;
 }
 
-.home {
-    text-align: center;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.grey {
+    color: #777;
+}
+
+.turquoise {
+    color: #22f1a2
+}
+
+.lightblue {
+    color: #53d9eb
 }

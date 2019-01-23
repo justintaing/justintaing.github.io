@@ -15,6 +15,12 @@
     text-align: center;
 }
 
+.NavLink-name {
+    color: white;
+    text-decoration: white;
+    transition: all 0.25s ease;
+}
+
 .header .nav {
     width: 40vw;
     text-align: center;

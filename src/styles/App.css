@@ -5,6 +5,7 @@ body {
 
 a:active {
   color: #999;
+  transition: all 0.25s ease;
 }
 
 .title {
@@ -60,7 +61,7 @@ section.route-section {
 }
 
 .shrink-enter {
-  
+
 }
 
 .shrink-enter.shrink-enter-active {

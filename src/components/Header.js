@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom';
 
 import Navigator from './Navigator';
 
@@ -9,7 +10,9 @@ class Header extends Component {
     render() {
         return (
             <div className="header">
-                <div className="name">{name}</div>
+                <div className="name">
+                    <NavLink className="NavLink-name" to="/">{name}</NavLink>
+                </div>
                 <div className="nav">
                     <Navigator/>
                 </div>
