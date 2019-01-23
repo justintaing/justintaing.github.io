@@ -71,6 +71,22 @@ class Rectangle extends Component {
         }
     }
 
+    onMouseDownHandler = () => {
+        if (this._mounted) {
+            this.setState({
+                mouseDown: true
+            });
+        }
+    }
+
+    onMouseUpHandler = () => {
+        if (this._mounted) {
+            this.setState({
+                mouseDown: false
+            });
+        }
+    }
+
     render = () => {
         return (
             <div className="container">
@@ -80,7 +96,9 @@ class Rectangle extends Component {
                         ref={this.circleDiv}
                         onMouseEnter={this.onMouseEnterHandler}
                         onMouseLeave={this.onMouseLeaveHandler}
-                        onClick={this.handleClick}>
+                        onClick={this.handleClick}
+                        onMouseDown={this.onMouseDownHandler}
+                        onMouseUp={this.onMouseUpHandler}>
                     </div>
                 </NavLink>
                 <div className="label"
