@@ -1,16 +1,25 @@
+:root {
+  --background-color: #282c34;
+  --red: #EE220C;
+  --green: #61D836;
+  --blue: #00A2FF;
+  --light-grey: #999;
+  --dark-grey: #444;
+}
+
 body {
   font-family: 'Lato', sans-serif;
-  background-color: #282c34;
+  background-color: var(--background-color);
 }
 
 a:active {
-  color: #999;
+  color: var(--light-grey);
   transition: all 0.25s ease;
 }
 
 .title {
   font-size: 3.5rem;
-  font-weight: bold;
+  font-weight: 900;
   margin-bottom: 1rem;
   text-align: center;
 }
@@ -26,6 +35,8 @@ a:active {
 }
 
 .App {
+  width: 100%;
+  height: 100%;
   color: white;
   display: flex;
   flex-direction: column;
@@ -68,7 +79,7 @@ section.route-section {
 
 .fade-exit.fade-exit-active {
   opacity: 0;
-  color: #282c34;
+  color: var(--background-color);
   transform: translateY(4rem);
   -moz-transform: translateY(4rem);
   -webkit-transform: translateY(4rem);

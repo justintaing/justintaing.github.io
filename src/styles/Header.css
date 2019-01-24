@@ -13,6 +13,7 @@
     font-size: 2.5rem;
     width: calc(30vw - 1rem);
     text-align: center;
+    font-weight: 900;
 }
 
 .NavLink-name {

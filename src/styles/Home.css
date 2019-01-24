@@ -1,5 +1,5 @@
 .home {
-    min-height: 100vh;
+    min-height: calc(100vh - 4rem);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,8 +8,9 @@
 
 .home .title {
     font-size: 4rem;
-    font-family: 'Inconsolata', monospace;
+    font-family: 'Fira Mono', monospace;
     white-space: pre-line;
+    line-height: 100%;
 }
 
 .subtitle {
