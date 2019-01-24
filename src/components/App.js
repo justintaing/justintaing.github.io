@@ -6,26 +6,24 @@ import Home from './Home';
 import About from './About';
 import Experience from './Experience';
 import Contact from './Contact';
-
-import '../styles/App.css';
 import Header from './Header';
 
-class App extends Component {
+import '../styles/App.css';
 
+class App extends Component {
     render() {
         return (
             <Router basename={process.env.PUBLIC_URL}>
-            <div className="App">
-                <Header/>
+                <div className="App">
+                    <Header/>
                     <Route render={({ location }) => (
                         <TransitionGroup className="transition-group">
                             <CSSTransition
-                            key={location.pathname}
-                            timeout={300}
-                            classNames="fade">
+                                key={location.pathname}
+                                timeout={300}
+                                classNames="fade">
                                 <section className="route-section">
                                     <Switch location={location}>
-
                                         <Route exact path="/" component={Home}/>
                                         <Route exact path="/about" component={About}/>
                                         <Route exact path="/experience" component={Experience}/>
@@ -35,7 +33,7 @@ class App extends Component {
                             </CSSTransition>
                         </TransitionGroup>
                     )}/>
-            </div>
+                </div>
             </Router>
         );
     }

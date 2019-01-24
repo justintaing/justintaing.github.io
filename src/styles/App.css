@@ -43,12 +43,23 @@ section.route-section {
 }
 
 .fade-enter {
-  opacity: .5;
+  opacity: 0;
+  transform: translateY(-2rem);
+  -moz-transform: translateY(-2rem);
+  -webkit-transform: translateY(-2rem);
+  -o-transform: translateY(-2rem);
+  -ms-transform: translateY(-2rem);
 }
 
 .fade-enter.fade-enter-active {
   opacity: 1;
-  transition: opacity 200ms ease;
+  color: white;
+  transform: translateY(0);
+  -moz-transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -o-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transition: all 0.4s ease;
 }
 
 .fade-exit {
@@ -56,6 +67,12 @@ section.route-section {
 }
 
 .fade-exit.fade-exit-active {
-  opacity: 0.01;
-  transition: opacity 800ms ease;
+  opacity: 0;
+  color: #282c34;
+  transform: translateY(4rem);
+  -moz-transform: translateY(4rem);
+  -webkit-transform: translateY(4rem);
+  -o-transform: translateY(4rem);
+  -ms-transform: translateY(4rem);
+  transition: all 0.6s ease;
 }

@@ -11,10 +11,10 @@ class Contact extends Component {
                     <div className="body">
                         <p>My email address is my last name followed by my first name at icloud dot com.</p>
                         <a className="link" href="https://www.linkedin.com/in/justintaing/" target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-linkedin"></i>
+                            <i className="fab fa-linkedin"></i>
                         </a>
                         <a className="link" href="https://github.com/justintaing" target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-github-square"></i>
+                            <i className="fab fa-github-square"></i>
                         </a>
                     </div>
                 </div>
