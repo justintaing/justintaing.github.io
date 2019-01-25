@@ -9,12 +9,47 @@
 
 .experience .content .body {
     font-size: 1.5rem;
-    max-width: 50vw;
 }
 
-.experience .card-back {
-    border: .1rem solid #eee;
+.card {
+    min-width: 60vw;
     max-width: 60vw;
     padding: .5rem;
     text-align: start;
+}
+
+.card .cardHeader {
+    border-bottom: .125rem solid var(--light-grey);
+    margin-bottom: .5rem;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card .cardContent {
+    padding: 0 1rem;
+}
+
+.card .jobTitle {
+    font-size: 2rem;
+}
+
+.card .timeWorked {
+    font-size: 1.25rem;
+    justify-items: right;
+}
+
+.card .company {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.card .companyLocation {
+    font-style: italic;
+}
+
+.card .bullets {
+    font-size: 1.125rem;
+    line-height: 150%;
 }

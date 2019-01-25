@@ -1,28 +1,26 @@
-{
-    "experience": [
-        {
-            "title": "Software Engineer",
-            "company": "SRI International",
-            "location": "St. Petersburg, FL",
-            "timeWorked": "August 2016 - Present",
-            "bullets": [
-                "Designed and implemented a web app from start to finish using AngularJS, Bootstrap, HTML, and CSS.",
-                "Enhanced a production system's user interface with new features and improvements to augment operator workflows.",
-                "Added new capabilities to an existing Service-oriented Architecture (SOA) platform using Java.",
-                "Coordinated internal software releases among team members for testing, shrinking the gap between finding a bug and implementing a fix.",
-                "Engaged in meetings and scrums to gauge tasking priorities, ask questions, and offer suggestions for new features and improvements."
-            ]
-        },
-        {
-            "title": "Student Associate (Internship)",
-            "company": "SRI International",
-            "location": "St. Petersburg, FL",
-            "timeWorked": "September 2015 - August 2016",
-            "bullets": [
-                "Contributed to a successful technical demonstration, resulting in additional funding for a project.",
-                "Developed a UI feature improvement in Javascript that enhanced the user friendliness of a system.",
-                "Prepared documentation and slides for various projects, of which one was made an internal standard for an SRI capability."
-            ]
-        }
-    ]
-}
+[
+    {
+        "title": "Software Engineer",
+        "company": "SRI International",
+        "location": "St. Petersburg, FL",
+        "timeWorked": "Aug 2016 — Present",
+        "bullets": [
+            "Designed and implemented a web app from start to finish using AngularJS, Bootstrap, HTML, and CSS.",
+            "Enhanced a production system's user interface with new features and improvements to augment operator workflows.",
+            "Added new capabilities to an existing Service-oriented Architecture (SOA) platform using Java.",
+            "Coordinated internal software releases among team members for testing, shrinking the gap between finding a bug and implementing a fix.",
+            "Engaged in meetings and scrums to gauge tasking priorities, ask questions, and offer suggestions for new features and improvements."
+        ]
+    },
+    {
+        "title": "Student Associate",
+        "company": "SRI International",
+        "location": "St. Petersburg, FL",
+        "timeWorked": "Sept 2015 — Aug 2016",
+        "bullets": [
+            "Contributed to a successful technical demonstration, resulting in additional funding for a project.",
+            "Developed a UI feature improvement in Javascript that enhanced the user friendliness of a system.",
+            "Prepared documentation and slides for various projects, of which one was made an internal standard for an SRI capability."
+        ]
+    }
+]

@@ -8,6 +8,7 @@
 }
 
 .contact .content .body {
+    min-width: 60vw;
     max-width: 60vw;
     display: inline-block;
     text-align: center;
