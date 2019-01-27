@@ -1,26 +1,31 @@
 [
     {
-        "title": "Software Engineer",
         "company": "SRI International",
         "location": "St. Petersburg, FL",
-        "timeWorked": "Aug 2016 — Present",
-        "bullets": [
-            "Designed and implemented a web app from start to finish using AngularJS, Bootstrap, HTML, and CSS.",
-            "Enhanced a production system's user interface with new features and improvements to augment operator workflows.",
-            "Added new capabilities to an existing Service-oriented Architecture (SOA) platform using Java.",
-            "Coordinated internal software releases among team members for testing, shrinking the gap between finding a bug and implementing a fix.",
-            "Engaged in meetings and scrums to gauge tasking priorities, ask questions, and offer suggestions for new features and improvements."
-        ]
-    },
-    {
-        "title": "Student Associate",
-        "company": "SRI International",
-        "location": "St. Petersburg, FL",
-        "timeWorked": "Sept 2015 — Aug 2016",
-        "bullets": [
-            "Contributed to a successful technical demonstration, resulting in additional funding for a project.",
-            "Developed a UI feature improvement in Javascript that enhanced the user friendliness of a system.",
-            "Prepared documentation and slides for various projects, of which one was made an internal standard for an SRI capability."
+        "dateRange": "9/2015 — Present",
+        "summary": "Initially hired on as a Student Associate for two semesters through the cooperative education program at the University of South Florida. Shadowed a senior software engineer and created goals to work towards. Transitioned to full-time employment after graduation and received a promotion in recognition of outstanding performance as a Student Associate. Took on higher level developer responsibilities and continued to set goals with technical leads to deliver quality results and further professional development.",
+        "positions": [
+            {
+                "title": "Software Engineer",
+                "dateRange": "8/2016 — Present",
+                "bullets": [
+                    "Designed (wireframes and mockups) and implemented web apps from start to finish.",
+                    "Enhanced a production system's UI with new features and performance improvements augmenting operator workflows.",
+                    "Added new impactful capabilities to a mature Service-Oriented Architecture using Java",
+                    "Coordinated internal software releases among team members for testing and expediting bug fixes. Clients received new software releases roughly every month as a result.",
+                    "Engaged in meetings and scrums to gauge tasking priorities, ask questions, and offer suggestions for new features and improvements.",
+                    "Contributed new ideas for proposals and technical breakdowns for white papers."
+                ]
+            },
+            {
+                "title": "Student Associate",
+                "dateRange": "8/2015 — 12/2015, 5/2016 — 8/2016",
+                "bullets": [
+                    "Contributed to a successful technical demonstration, resulting in additional funding for a project.",
+                    "Developed a UI feature improvement in Javascript that enhanced the user friendliness of a system.",
+                    "Prepared documentation and slides for various projects, of which one was made an internal standard for an SRI capability."
+                ]
+            }
         ]
     }
 ]

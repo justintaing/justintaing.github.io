@@ -87,3 +87,28 @@ section.route-section {
   -ms-transform: translateY(4rem);
   transition: all 0.6s ease;
 }
+
+.notMobileFriendlyYet {
+  font-size: 2rem;
+  min-height: 100vh;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .notMobileFriendlyYet {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .notMobileFriendlyYet {
+    display: flex;
+  }
+
+  .AppContent {
+    display: none;
+  }
+}

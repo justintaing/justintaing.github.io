@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { NavLink } from 'react-router-dom';
+import animateScrollTo from 'animated-scroll-to';
 
 import '../styles/Rectangle.css';
 
@@ -14,7 +15,7 @@ class Rectangle extends Component {
             initialLoad: true
         };
 
-        this.circleDiv = React.createRef();
+        this.rectangleDiv = React.createRef();
         this.labelDiv = React.createRef();
         this._mounted = false;
         this._delay = this.props.delay;
@@ -45,8 +46,8 @@ class Rectangle extends Component {
 
     updateLabelPosition = () => {
         if (this._mounted) {
-            let rect = ReactDOM.findDOMNode(this.circleDiv.current).getBoundingClientRect();
-            let rectWidth = this.circleDiv.current.clientWidth / 2;
+            let rect = ReactDOM.findDOMNode(this.rectangleDiv.current).getBoundingClientRect();
+            let rectWidth = this.rectangleDiv.current.clientWidth / 2;
             let labelWidth = this.labelDiv.current.clientWidth;
 
             this.setState({
@@ -88,16 +89,20 @@ class Rectangle extends Component {
         }
     }
 
+    onClickHandler = () => {
+        animateScrollTo(0);
+    }
+
     render = () => {
         return (
             <div className="container">
                 <NavLink to={'/'+this.props.label.toLowerCase()} activeClassName={this.props.initialColor + '-active'}>
                     <div className={'rectangle ' + 
                         ((this.state.initialLoad || this.state.mouseDown) ? this.props.initialColor : 'NavLinkActive')}
-                        ref={this.circleDiv}
+                        ref={this.rectangleDiv}
                         onMouseEnter={this.onMouseEnterHandler}
                         onMouseLeave={this.onMouseLeaveHandler}
-                        onClick={this.handleClick}
+                        onClick={this.onClickHandler}
                         onMouseDown={this.onMouseDownHandler}
                         onMouseUp={this.onMouseUpHandler}>
                     </div>

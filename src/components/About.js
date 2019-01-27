@@ -16,6 +16,9 @@ class About extends Component {
                         {education}
                     </div>
                 </div>
+                <div className="notMobileFriendlyYet">
+                    This website is best viewed on a desktop.
+                </div>
             </div>
         );
     }

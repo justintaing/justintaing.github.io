@@ -19,37 +19,63 @@
 }
 
 .card .cardHeader {
-    border-bottom: .125rem solid var(--light-grey);
-    margin-bottom: .5rem;
-    padding: 0 1rem;
+    border-bottom: .1rem solid var(--light-grey);
+    /* padding: 0 1rem; */
+    padding-bottom: .25rem;
+    margin-bottom: 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.card .cardContent {
+.card .company {
+    font-size: 1.75rem;
+    font-weight: 700;
+    display: inline-block;
+}
+
+.card .company .companyLocation {
+    font-size: 1.25rem;
+}
+
+.card .summaryOfCareer {
+    line-height: 150%;
+    font-size: 1.125rem;
     padding: 0 1rem;
 }
 
-.card .jobTitle {
-    font-size: 2rem;
-}
-
-.card .timeWorked {
+.timeAtCompany,
+.timeAtPosition {
     font-size: 1.25rem;
-    justify-items: right;
+    font-weight: 700;
 }
 
-.card .company {
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
+.card .cardContent ul {
+    margin-top: .75rem;
 }
 
-.card .companyLocation {
-    font-style: italic;
+.bullet li {
+    padding-left: 2rem;
 }
 
 .card .bullets {
     font-size: 1.125rem;
     line-height: 150%;
+    padding: 0 1.5rem;
+}
+
+.position {
+    margin-bottom: 1rem;
+}
+
+.position .titleHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: .5rem;
+}
+
+.position .jobTitle {
+    font-size: 1.5rem;
+    font-weight: 700;
 }

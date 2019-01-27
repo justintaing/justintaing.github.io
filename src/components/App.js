@@ -16,23 +16,28 @@ class App extends Component {
             <Router basename={process.env.PUBLIC_URL}>
                 <div className="App">
                     <Header/>
-                    <Route render={({ location }) => (
-                        <TransitionGroup className="transition-group">
-                            <CSSTransition
-                                key={location.pathname}
-                                timeout={300}
-                                classNames="fade">
-                                <section className="route-section">
-                                    <Switch location={location}>
-                                        <Route exact path="/" component={Home}/>
-                                        <Route exact path="/about" component={About}/>
-                                        <Route exact path="/experience" component={Experience}/>
-                                        <Route exact path="/contact" component={Contact}/>
-                                    </Switch>
-                                </section>
-                            </CSSTransition>
-                        </TransitionGroup>
-                    )}/>
+                    <div className="AppContent">
+                        <Route render={({ location }) => (
+                            <TransitionGroup className="transition-group">
+                                <CSSTransition
+                                    key={location.pathname}
+                                    timeout={300}
+                                    classNames="fade">
+                                    <section className="route-section">
+                                        <Switch location={location}>
+                                            <Route exact path="/" component={Home}/>
+                                            <Route exact path="/about" component={About}/>
+                                            <Route exact path="/experience" component={Experience}/>
+                                            <Route exact path="/contact" component={Contact}/>
+                                        </Switch>
+                                    </section>
+                                </CSSTransition>
+                            </TransitionGroup>
+                        )}/>
+                    </div>
+                    <div className="notMobileFriendlyYet">
+                        This website is best viewed on a desktop.
+                    </div>
                 </div>
             </Router>
         );

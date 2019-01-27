@@ -33,3 +33,15 @@
 .header .spacer {
     width: calc(30vw - 1rem);
 }
+
+@media screen and (min-width: 768px) {
+    .header .nav {
+        display: initial;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .header .nav {
+        display: none;
+    }
+}
