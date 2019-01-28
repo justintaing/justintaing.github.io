@@ -20,7 +20,6 @@
 
 .card .cardHeader {
     border-bottom: .1rem solid var(--light-grey);
-    /* padding: 0 1rem; */
     padding-bottom: .25rem;
     margin-bottom: 1rem;
     display: flex;
