@@ -36,7 +36,7 @@ class App extends Component {
                         )}/>
                     </div>
                     <div className="notMobileFriendlyYet">
-                        This website is best viewed on a desktop.
+                        This website currently does not support mobile viewing, but it's in the works! For now, please view this website on a desktop.
                     </div>
                 </div>
             </Router>

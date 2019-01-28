@@ -32,16 +32,25 @@
 
 .header .spacer {
     width: calc(30vw - 1rem);
+    text-align: center;
+    font-size: 1rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-@media screen and (min-width: 768px) {
-    .header .nav {
-        display: initial;
-    }
+.App-logo {
+    height: 2rem;
 }
 
 @media screen and (max-width: 767px) {
     .header .nav {
         display: none;
     }
+
+    .header .spacer {
+        display: none;
+    }
 }
+
