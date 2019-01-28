@@ -20,9 +20,6 @@ class Home extends Component {
                         <span className="grey">/&gt;</span>
                     </Typist>
                 </div>
-                <div className="madeWith">
-
-                </div>
             </div>
         );
     }
