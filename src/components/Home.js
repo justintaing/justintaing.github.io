@@ -11,8 +11,7 @@ class Home extends Component {
                     <Typist cursor={{
                         blink: true,
                         element: '_'
-                    }}
-                        onTypingDone={this.onTypingDone}>
+                    }}>
                         <span className="grey">&lt;</span>
                         <span className="turquoise">Software&nbsp;&nbsp;&nbsp;</span>
                         <br/>
