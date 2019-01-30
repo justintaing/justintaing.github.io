@@ -8,13 +8,13 @@ class ExperienceCard extends Component {
     render() {
         var experience = this.props.experience;
 
-        var positions = experience.positions.map(position => {
-            var bullets = position.bullets.map((bullet) => {
-                return (<li className="bullet">{bullet}</li>);
+        var positions = experience.positions.map((position, index) => {
+            var bullets = position.bullets.map((bullet, index) => {
+                return (<li className="bullet" key={index}>{bullet}</li>);
             });
 
             return (
-                <li>
+                <li key={index}>
                     <div className="position">
                         <div className="titleHeader">
                             <div className="jobTitle">
@@ -56,8 +56,8 @@ class ExperienceCard extends Component {
 
 class Experience extends Component {
     render() {
-        var experiences = ExperienceList.map((experience) => {
-            return (<ExperienceCard experience={experience}/>);
+        var experiences = ExperienceList.map((experience, index) => {
+            return (<ExperienceCard key={index} experience={experience}/>);
         })
 
         return (
@@ -67,9 +67,6 @@ class Experience extends Component {
                     <div className="body">
                         {experiences}
                     </div>
-                </div>
-                <div className="notMobileFriendlyYet">
-                    This website is best viewed on a desktop.
                 </div>
             </div>
         );

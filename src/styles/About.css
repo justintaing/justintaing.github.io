@@ -13,3 +13,14 @@
     min-width: 60vw;
     max-width: 60vw;
 }
+
+@media screen and (max-width: 780px) {
+    .about .content {
+        margin-bottom: 4rem;
+    }
+
+    .about .content .bio {
+        min-width: 90vw;
+        max-width: 90vw;
+    }
+}

@@ -1,0 +1,21 @@
+.MobileHeader {
+    width: calc(100vw - 2rem);
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: #282c34cc;
+    z-index: 100;
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 900;
+}
+
+@media screen and (max-width: 780px) {
+    .MobileHeader {
+        display: flex;
+    }
+}

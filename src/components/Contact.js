@@ -18,9 +18,6 @@ class Contact extends Component {
                         </a>
                     </div>
                 </div>
-                <div className="notMobileFriendlyYet">
-                    This website is best viewed on a desktop.
-                </div>
             </div>
         );
     }

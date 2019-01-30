@@ -29,3 +29,14 @@ a:hover.link {
 a:active.link {
     color: var(--blue);
 }
+
+@media screen and (max-width: 780px) {
+    .contact .content {
+        margin-bottom: 4rem;
+    }
+
+    .contact .content .body {
+        min-width: 90vw;
+        max-width: 90vw;
+    }
+}

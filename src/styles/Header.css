@@ -44,12 +44,8 @@
     height: 2rem;
 }
 
-@media screen and (max-width: 767px) {
-    .header .nav {
-        display: none;
-    }
-
-    .header .spacer {
+@media screen and (max-width: 780px) {
+    .header {
         display: none;
     }
 }

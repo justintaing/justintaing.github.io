@@ -97,18 +97,8 @@ section.route-section {
   justify-content: center;
 }
 
-@media screen and (min-width: 768px) {
-  .notMobileFriendlyYet {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .notMobileFriendlyYet {
-    display: flex;
-  }
-
-  .AppContent {
-    display: none;
+@media screen and (max-width: 780px) {
+  .title {
+    font-size: 2.5rem;
   }
 }

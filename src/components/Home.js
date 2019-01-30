@@ -18,6 +18,9 @@ class Home extends Component {
                         <span className="lightblue">&nbsp;&nbsp;&nbsp;Engineer</span>
                         <span className="grey">/&gt;</span>
                     </Typist>
+                    <div className="mobileLogo">
+                        Software Engineer
+                    </div>
                 </div>
             </div>
         );

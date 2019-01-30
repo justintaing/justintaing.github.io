@@ -79,3 +79,14 @@
     font-size: 1.5rem;
     font-weight: 700;
 }
+
+@media screen and (max-width: 780px) {
+    .experience .content {
+        margin-bottom: 4rem;
+    }
+
+    .card {
+        min-width: 90vw;
+        max-width: 90vw;
+    }
+}

@@ -7,8 +7,10 @@ import About from './About';
 import Experience from './Experience';
 import Contact from './Contact';
 import Header from './Header';
+import MobileHeader from './MobileHeader';
 
 import '../styles/App.css';
+import MobileNavigator from './MobileNavigator';
 
 class App extends Component {
     render() {
@@ -16,6 +18,7 @@ class App extends Component {
             <Router basename={process.env.PUBLIC_URL}>
                 <div className="App">
                     <Header/>
+                    <MobileHeader/>
                     <div className="AppContent">
                         <Route render={({ location }) => (
                             <TransitionGroup className="transition-group">
@@ -35,9 +38,7 @@ class App extends Component {
                             </TransitionGroup>
                         )}/>
                     </div>
-                    <div className="notMobileFriendlyYet">
-                        This website currently does not support mobile viewing, but it's in the works! For now, please view this website on a desktop.
-                    </div>
+                    <MobileNavigator/>
                 </div>
             </Router>
         );

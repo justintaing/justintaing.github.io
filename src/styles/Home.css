@@ -45,3 +45,17 @@
     color: transparent;
   }
 }
+
+.home .mobileLogo {
+    display: none;
+}
+
+@media screen and (max-width: 780px) {
+    .Typist {
+        display: none;
+    }
+
+    .home .mobileLogo {
+        display: flex;
+    }
+}
