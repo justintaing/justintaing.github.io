@@ -19,7 +19,9 @@ class Home extends Component {
                         <span className="grey">/&gt;</span>
                     </Typist>
                     <div className="mobileLogo">
-                        Software Engineer
+                        Software
+                        <br/>
+                        Engineer
                     </div>
                 </div>
             </div>

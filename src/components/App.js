@@ -19,6 +19,7 @@ class App extends Component {
                 <div className="App">
                     <Header/>
                     <MobileHeader/>
+                    <MobileNavigator/>
                     <div className="AppContent">
                         <Route render={({ location }) => (
                             <TransitionGroup className="transition-group">
@@ -38,7 +39,6 @@ class App extends Component {
                             </TransitionGroup>
                         )}/>
                     </div>
-                    <MobileNavigator/>
                 </div>
             </Router>
         );
