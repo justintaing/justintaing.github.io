@@ -12,13 +12,13 @@ class MobileNavigator extends Component {
     render() {
         return (
             <div className="MobileNavigator">
-                <NavLink className="NavLink" onClick={this.onClickHandler}activeClassName="ActiveNavLinkRed" to="/about">
+                <NavLink className="NavLink" activeClassName="ActiveNavLinkRed" to="/about" onClick={this.onClickHandler}>
                     About
                 </NavLink>
-                <NavLink className="NavLink" onClick={this.onClickHandler}activeClassName="ActiveNavLinkGreen" to="/experience">
+                <NavLink className="NavLink" activeClassName="ActiveNavLinkGreen" to="/experience" onClick={this.onClickHandler}>
                     Experience
                 </NavLink>
-                <NavLink className="NavLink" onClick={this.onClickHandler}          activeClassName="ActiveNavLinkBlue" to="/contact">
+                <NavLink className="NavLink" activeClassName="ActiveNavLinkBlue" to="/contact" onClick={this.onClickHandler}>
                     Contact
                 </NavLink>
             </div>
