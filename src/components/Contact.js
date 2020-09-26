@@ -9,9 +9,12 @@ class Contact extends Component {
                 <div className="content">
                     <div className="title">Contact</div>
                     <div className="body">
-                        <p>My email address is my first name followed by my last name at outlook dot com.</p>
+                        <p>My email address is my first initial followed by my last name at fastmail dot com.</p>
                         <a className="link" href="https://github.com/justintaing" target="_blank" rel="noopener noreferrer">
                             <i className="fab fa-github-square"></i>
+                        </a>
+                        <a className="link" href="https://www.linkedin.com/in/justintaing/" target="_blank" rel="noopener noreferrer">
+                            <i className="fab fa-linkedin"></i>
                         </a>
                     </div>
                 </div>

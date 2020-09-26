@@ -1,20 +1,36 @@
 [
     {
+        "company": "Healthcare IQ",
+        "location": "Palmetto, FL",
+        "dateRange": "4/2019 — Present",
+        "summary": "",
+        "positions": [
+            {
+                "title": "Full Stack Software Engineer",
+                "dateRange": "4/2019 — Present",
+                "bullets": [
+                    "Primary UI/UX developer responsible for design, new features, and bug fixes for a customer-facing Angular 9 application.",
+                    "Implements new solutions from front-end to back-end, utilizing technologies such as Angular, Docker, Java, NodeJS, and Java.",
+                    "Collaborates with and mentors fellow software engineers on a variety of projects."
+                ]
+            }
+        ]
+    },
+    {
         "company": "SRI International",
         "location": "St. Petersburg, FL",
         "dateRange": "9/2015 — 4/2019",
-        "summary": "Initially hired on as a Student Associate for two semesters through the cooperative education program at the University of South Florida. Shadowed a senior software engineer and created goals to work towards. Transitioned to full-time employment after graduation and received a promotion in recognition of outstanding performance as a Student Associate. Took on higher level developer responsibilities and continued to set goals with technical leads to deliver quality results and further professional development.",
+        "summary": "",
         "positions": [
             {
                 "title": "Software Engineer",
                 "dateRange": "8/2016 — 4/2019",
                 "bullets": [
+                    "Hired on through the University of South Florida’s cooperative education program after two successful semesters.",
                     "Designed (wireframes and mockups) and implemented web apps from start to finish.",
-                    "Enhanced a production system's UI with new features and performance improvements augmenting operator workflows.",
-                    "Added new impactful capabilities to a mature Service-Oriented Architecture using Java",
-                    "Coordinated internal software releases among team members for testing and expediting bug fixes. Clients received new software releases roughly every month as a result.",
-                    "Engaged in meetings and scrums to gauge tasking priorities, ask questions, and offer suggestions for new features and improvements.",
-                    "Contributed new ideas for proposals and technical breakdowns for white papers."
+                    "Enhanced a production system's UI with new features and performance improvements, augmenting operator workflows.",
+                    "Added new and impactful capabilities to a mature service-oriented architecture using Java.",
+                    "Coordinated internal software releases among team members for testing and expediting bug fixes. Clients received new software releases roughly every month as a result."
                 ]
             },
             {
