@@ -6,11 +6,12 @@
         "summary": "",
         "positions": [
             {
-                "title": "Full Stack Software Engineer",
+                "title": "Software Engineer III",
                 "dateRange": "4/2019 — Present",
                 "bullets": [
-                    "Primary UI/UX developer responsible for design, new features, and bug fixes for a customer-facing Angular 9 application.",
-                    "Implements new solutions from front-end to back-end, utilizing technologies such as Angular, Docker, Java, NodeJS, and Java.",
+                    "Primary UI/UX developer responsible for design, new features, and bug fixes for a customer-facing Angular application using Typescript.",
+                    "Implements new solutions from front-end to back-end, utilizing technologies such as Angular, NodeJS, and Spring Boot. Such services are containerized with Docker and deployed to cloud providers such as Amazon Web Services (AWS).",
+                    "Defined new patterns for building out microservices for a Python-based text analysis pipeline. These new patterns allowed for simpler implementations and enabled the ability to unit test these microservices.",
                     "Collaborates with and mentors fellow software engineers on a variety of projects."
                 ]
             }
