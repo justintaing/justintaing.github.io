@@ -11,6 +11,7 @@ import MobileHeader from './MobileHeader';
 
 import '../styles/App.css';
 import MobileNavigator from './MobileNavigator';
+import Footer from './Footer';
 
 class App extends Component {
     render() {
@@ -39,6 +40,7 @@ class App extends Component {
                             </TransitionGroup>
                         )}/>
                     </div>
+                    <Footer/>
                 </div>
             </Router>
         );

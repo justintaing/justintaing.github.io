@@ -22,6 +22,14 @@
     transition: all 0.25s ease;
 }
 
+.hidden {
+    color: white;
+    text-decoration: white;
+    opacity: 0;
+    transition: all 0.25s ease;
+    pointer-events: none;
+}
+
 .header .nav {
     width: 40vw;
     text-align: center;

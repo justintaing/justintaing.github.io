@@ -12,6 +12,8 @@ class Home extends Component {
                         blink: true,
                         element: '_'
                     }}>
+                        Justin Taing
+                        <br/><br/>
                         <span className="grey">&lt;</span>
                         <span className="turquoise">Software&nbsp;&nbsp;&nbsp;</span>
                         <br/>

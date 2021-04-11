@@ -1,6 +1,7 @@
 .experience .content {
     min-height: calc(100vh - 10rem);
     margin-top: 5rem;
+    margin-bottom: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
