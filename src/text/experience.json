@@ -1,13 +1,26 @@
 [
     {
+        "company": "Qorvo",
+        "location": "Apopka, FL",
+        "dateRange": "5/2021 - Present",
+        "summary": "",
+        "positions": [
+            {
+                "title": "Senior Software Engineer",
+                "dateRange": "5/2021 - Present",
+                "bullets": []
+            }
+        ]
+    },
+    {
         "company": "Healthcare IQ",
         "location": "Palmetto, FL",
-        "dateRange": "4/2019 — Present",
+        "dateRange": "4/2019 — 5/2021",
         "summary": "",
         "positions": [
             {
                 "title": "Software Engineer III",
-                "dateRange": "4/2019 — Present",
+                "dateRange": "4/2019 — 5/2021",
                 "bullets": [
                     "Primary UI/UX developer responsible for design, new features, and bug fixes for a customer-facing Angular application using Typescript.",
                     "Implements new solutions from front-end to back-end, utilizing technologies such as Angular, NodeJS, and Spring Boot. Such services are containerized with Docker and deployed to cloud providers such as Amazon Web Services (AWS).",
